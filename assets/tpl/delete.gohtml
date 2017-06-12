@@ -1,0 +1,7 @@
+<h1>Delete Picture</h1>
+<form method="POST">
+  {{ range .Photos }}
+  <input type="radio" name="{{ . }}" value="{{ . }}">{{ . }}
+  {{ end }}
+  <input type="submit" value="Delete">
+</form>

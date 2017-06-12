@@ -1,0 +1,10 @@
+{{ template "header" }}
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" name="" value="Upload">
+    </form>
+    <h5>{{ .Error }}</h5>
+    <h5>{{ .Msg }}</h5>
+    <a href="/logout">Logout</a>
+    <a href="/">Home</a>
+{{ template "footer" }}

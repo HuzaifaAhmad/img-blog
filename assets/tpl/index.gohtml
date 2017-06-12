@@ -1,0 +1,12 @@
+{{ template "header" }}
+    <h1>PICTURES</h1>
+    {{ if .LogedIn}}
+    <a href="/admin">Admin</a>
+    {{ else }}
+    <a href="/login">Login</a>
+    {{ end }}
+    <br/>
+    {{ range .Photos }}
+    <img src="{{ . }}" alt="Photo" style="max-width: 100%;"><br>
+    {{ end }}
+{{ template "footer" }}
